@@ -2,12 +2,24 @@ package Algorithm;
 import java.lang.Math;
 import java.util.Arrays;
 
+
 public class HeapSortImplementation {
     public static void main (String[] args){
-        int[] arr1 = {1,2,3,4,5};
+        int[] arr1 = new int[1000];
+        int size = arr1.length;
+        generateArrayRandom(arr1, size);
         System.out.println("This is the origin array: " + Arrays.toString(arr1));
         buildHeap(arr1);
         System.out.println("This is the array after heapified: " + Arrays.toString(arr1));
+
+    }
+
+    public static int[] generateArrayRandom(int[] ranArr, int size){
+        for(int i=0; i<size; i++){
+            ranArr[i]= (int) (Math.random()*1000);
+        }
+        return ranArr;
+
 
     }
 
