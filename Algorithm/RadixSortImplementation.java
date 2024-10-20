@@ -44,11 +44,9 @@ public class RadixSortImplementation {
             arr[i]=output[i];
         }
     }
-    // Main function to implement Radix Sort
+
     public static void radixSort(int[] arr){
-        // Find the maximum number to determine the number of digits
         int max=getMax(arr);
-        // Perform counting sort for each digit
         for(int exp=1;max/exp>0;exp*=10){
             countingSort(arr,exp);
         }

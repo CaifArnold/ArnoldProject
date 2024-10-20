@@ -25,8 +25,6 @@ public class HeapSortImplementation {
             int temp = arr[i];
             arr[i] = arr[largest];
             arr[largest] = temp;
-
-            // Recursively heapify the affected sub-tree
             maxHeapify(arr, largest);
         }
     }

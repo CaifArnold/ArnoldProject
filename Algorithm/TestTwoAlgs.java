@@ -7,7 +7,7 @@ public class TestTwoAlgs {
         //construct two instances
         HeapSortImplementation h = new HeapSortImplementation();
         RadixSortImplementation r = new RadixSortImplementation();
-        //generate same arrays
+        //generate the same arrays
         int[] arr1 = new int[1000];
         int size = arr1.length;
         generateArrayRandom(arr1, size);
